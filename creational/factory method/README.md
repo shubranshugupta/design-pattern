@@ -14,6 +14,14 @@ One common real-life problem is the creation of different types of vehicles in a
 
 The Factory Method design pattern provides a solution to this problem by defining an interface for creating objects, but allowing subclasses to decide which class to instantiate. In the case of the transportation system, we can define a `Vehicle` interface and create concrete vehicle classes that implement this interface. Each concrete vehicle class can have its own factory method that creates instances of the respective vehicle type. This way, the transportation system can create vehicles without specifying their exact classes, allowing for flexibility and extensibility.
 
+## 📚 Example
+
+Consider a simple example of a `Shape` interface that defines a `draw` method, and concrete classes `Square` and `Rectangle` that implement this interface. We can create a `ShapeFactory` class with a factory method that creates instances of `Square` or `Rectangle` based on the input provided. This way, the client can create shapes without knowing their exact classes.
+
+<p align="center">
+    <img src="./image/uml_diagram.jpg" height=300 weight=300 alt="uml diagram"></img>
+</p>
+
 ## 💡 Applicability
 
 The Factory Method design pattern is applicable in the following scenarios:
