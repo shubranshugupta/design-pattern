@@ -12,7 +12,7 @@ In a graphics application, we often need to create various types of shapes like 
 
 ## 😀 Solution
 
-The Factory Method design pattern can provide a solution to this problem. We can create an interface or abstract class that defines a factory method for creating objects. Concrete classes can then implement this interface or extend the abstract class to provide specific implementations of the factory method. This way, the client code can create objects without knowing their exact classes, and the responsibility of object creation is delegated to the subclasses. This promotes loose coupling between the creator and product classes and allows for easy extensibility by adding new product classes and corresponding creator classes. You can find the implementation of this example in the [code snippet](./code/src). Below is the UML diagram of the Factory Method design pattern.
+The Factory Method design pattern can provide a solution to this problem. We can create an interface or abstract class that defines a factory method for creating objects. Concrete classes can then implement this interface or extend the abstract class to provide specific implementations of the factory method. This way, the client code can create objects without knowing their exact classes, and the responsibility of object creation is delegated to the subclasses. This promotes loose coupling between the creator and product classes and allows for easy extensibility by adding new product classes and corresponding creator classes. You can find the implementation of this example in the [code snippet](./src). Below is the UML diagram of the Factory Method design pattern.
 
 <p align="center">
     <img src="./image/uml_diagram.jpg" height=300 weight=300 alt="uml diagram"></img>
