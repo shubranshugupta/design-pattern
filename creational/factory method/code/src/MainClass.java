@@ -7,5 +7,8 @@ public class MainClass {
 
         Shape shape2 = shapeFactory.getShape("SQUARE");
         shape2.draw();
+
+        Shape shape3 = shapeFactory.getShape("CIRCLE");
+        shape3.draw();
     }
 }
