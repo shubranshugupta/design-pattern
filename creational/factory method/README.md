@@ -8,15 +8,11 @@ The Factory Method design pattern is a creational pattern that provides an inter
 
 ## ☹️ Problem
 
-One common real-life problem is the creation of different types of vehicles in a transportation system. Each vehicle has its own unique characteristics and behaviors. For example, a transportation system may need to create instances of cars, buses, and trucks, each with their own specific features. However, the exact type of vehicle needed may vary depending on the requirements of the system.
+In a graphics application, we often need to create various types of shapes like squares, rectangles, circles, etc. However, the process of creating these shapes can be complex and may vary depending on the type of shape. Moreover, the client code that needs these shapes shouldn't be burdened with the details of how these shapes are created or the specifics of what makes a square a square or a rectangle a rectangle. This can lead to code that is hard to manage and extend, especially as more shape types are added to the application.
 
 ## 😀 Solution
 
-The Factory Method design pattern provides a solution to this problem by defining an interface for creating objects, but allowing subclasses to decide which class to instantiate. In the case of the transportation system, we can define a `Vehicle` interface and create concrete vehicle classes that implement this interface. Each concrete vehicle class can have its own factory method that creates instances of the respective vehicle type. This way, the transportation system can create vehicles without specifying their exact classes, allowing for flexibility and extensibility.
-
-## 📚 [Example](./code/src/)
-
-Consider a simple example of a `Shape` interface that defines a `draw` method, and concrete classes `Square` and `Rectangle` that implement this interface. We can create a `ShapeFactory` class with a factory method that creates instances of `Square` or `Rectangle` based on the input provided. This way, the client can create shapes without knowing their exact classes.
+The Factory Method design pattern can provide a solution to this problem. We can create an interface or abstract class that defines a factory method for creating objects. Concrete classes can then implement this interface or extend the abstract class to provide specific implementations of the factory method. This way, the client code can create objects without knowing their exact classes, and the responsibility of object creation is delegated to the subclasses. This promotes loose coupling between the creator and product classes and allows for easy extensibility by adding new product classes and corresponding creator classes. You can find the implementation of this example in the [code snippet](./code/src). Below is the UML diagram of the Factory Method design pattern.
 
 <p align="center">
     <img src="./image/uml_diagram.jpg" height=300 weight=300 alt="uml diagram"></img>
