@@ -26,11 +26,11 @@ Design patterns offer several benefits to software developers and organizations:
 
 Design patterns can be categorized into three main types:
 
-1. **Creational Patterns**: These patterns focus on object creation mechanisms, providing flexible ways to create objects while hiding the creation logic. Examples include Singleton, Factory Method, and Builder patterns.
+1. [**Creational Patterns**](./creational): These patterns focus on object creation mechanisms, providing flexible ways to create objects while hiding the creation logic. Examples include Singleton, Factory Method, and Builder patterns.
 
-2. **Structural Patterns**: These patterns deal with the composition of classes and objects, providing ways to form larger structures while keeping them flexible and efficient. Examples include Adapter, Decorator, and Composite patterns.
+2. [**Structural Patterns**](./structural): These patterns deal with the composition of classes and objects, providing ways to form larger structures while keeping them flexible and efficient. Examples include Adapter, Decorator, and Composite patterns.
 
-3. **Behavioral Patterns**: These patterns focus on the interaction between objects, defining communication patterns and responsibilities. Examples include Observer, Strategy, and Command patterns.
+3. [**Behavioral Patterns**](./behavioural): These patterns focus on the interaction between objects, defining communication patterns and responsibilities. Examples include Observer, Strategy, and Command patterns.
 
 ## Usage
 
