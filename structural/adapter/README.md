@@ -12,7 +12,14 @@ Suppose you have a app that show car speed and you have a data source class that
 
 ## 😀 Solution
 
-The Adapter Design Pattern solves this problem by creating an adapter class that wraps the data source class and provides the expected interface. The adapter class implements the interface expected by the app and internally uses the data source class to get the car speed in km/h. The adapter class then converts the speed from km/h to m/s and returns it to the app. The app can now use the adapter class to get the car speed in m/s without modifying the data source class. You can find the implementation of this example in the [code snippet](./src). Below is the UML class diagram of the Adapter design pattern.
+The Adapter Design Pattern solves this problem by creating an adapter class that wraps the data source class and provides the expected interface. The adapter class implements the interface expected by the app and internally uses the data source class to get the car speed in km/h. The adapter class then converts the speed from km/h to m/s and returns it to the app. The app can now use the adapter class to get the car speed in m/s without modifying the data source class. In the context of our car speed app:
+
+1. **Target (`SpeedAdapter`)**: This is an interface that represents the expected interface that the app uses to get the car speed in m/s. It declares a method `getSpeed()` that returns the car speed in m/s.
+2. **Adapter (`CarSpeedAdapter`)**: This is a class that implements the `SpeedAdapter` interface and wraps the data source class. It has a reference to the data source class and implements the `getSpeed()` method by calling the `getSpeed()` method of the data source class and converting the speed from km/h to m/s.
+3. **Adaptee (`CarSpeedDataSource`)**: This is a class that provides the car speed in km/h. It has a method `getSpeed()` that returns the car speed in km/h.
+4. **Client (`CarSpeedApp`)**: This class uses the `SpeedAdapter` interface to get the car speed in m/s. It creates an instance of the adapter class and uses it to get the car speed in m/s.
+
+This way, you can make the data source class work with your app without modifying its source code. You can create an adapter class that wraps the data source class and provides the expected interface. The app can use the adapter class to get the car speed in m/s. You can find the implementation of this example in the [code snippet](./src). Below is the UML class diagram of the Adapter design pattern.
 
 <p align="center">
     <img src="./image/uml_diagram.jpg" height=300 weight=300 alt="uml diagram"></img>
