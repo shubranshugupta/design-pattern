@@ -25,3 +25,6 @@ build/
 # IDE-specific files
 .vscode/
 /.metadata/
+
+# temp
+*.txt
