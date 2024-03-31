@@ -12,7 +12,7 @@ Consider a scenario where you're developing a logging system for a large applica
 
 ## 😀 Solution
 
-The Singleton Design Pattern can provide a solution to this problem. We can create a Logger class that is a singleton, ensuring that only one instance of the Logger class exists in the application. This singleton Logger class would provide a global access point for logging, and all parts of the application would use this single Logger instance to write logs. This way, we can ensure that all logs are written to the same file in a coordinated manner, and we can avoid the resource overhead of creating multiple Logger instances. You can find the implementation of this example in the [code snippet](./src). Below is the UML diagram of the Singleton design pattern.
+The Singleton Design Pattern can provide a solution to this problem. We can create a Logger class that is a singleton, ensuring that only one instance of the Logger class exists in the application. This singleton Logger class would provide a global access point for logging, and all parts of the application would use this single Logger instance to write logs. This way, we can ensure that all logs are written to the same file in a coordinated manner, and we can avoid the resource overhead of creating multiple Logger instances. You can find the implementation of this example in the [code snippet](./src). Below is the UML class diagram of the Singleton design pattern.
 
 <p align="center">
     <img src="./image/uml_class_diagram.jpg" height=300 weight=500 alt="uml diagram"></img>
