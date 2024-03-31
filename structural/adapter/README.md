@@ -12,7 +12,7 @@ Suppose you have a app that show car speed and you have a data source class that
 
 ## 😀 Solution
 
-The Adapter Design Pattern solves this problem by creating an adapter class that wraps the data source class and provides the expected interface. The adapter class implements the interface expected by the app and internally uses the data source class to get the car speed in km/h. The adapter class then converts the speed from km/h to m/s and returns it to the app. The app can now use the adapter class to get the car speed in m/s without modifying the data source class. You can find the implementation of this example in the [code snippet](./src). Below is the UML diagram of the Singleton design pattern.
+The Adapter Design Pattern solves this problem by creating an adapter class that wraps the data source class and provides the expected interface. The adapter class implements the interface expected by the app and internally uses the data source class to get the car speed in km/h. The adapter class then converts the speed from km/h to m/s and returns it to the app. The app can now use the adapter class to get the car speed in m/s without modifying the data source class. You can find the implementation of this example in the [code snippet](./src). Below is the UML diagram of the Adapter design pattern.
 
 <p align="center">
     <img src="./image/uml_diagram.jpg" height=300 weight=300 alt="uml diagram"></img>
