@@ -8,7 +8,7 @@ Behavioral design patterns are a category of design patterns that deal with obje
 
 2. [**State Pattern**](./state): Allows an object to alter its behavior when its internal state changes.
 
-3. [**Chain of Responsibility Pattern**](./chain_responsibility): Decouples sender and receiver of a request based on type of request. This pattern comes under behavioral patterns.
+3. [**Chain of Responsibility Pattern**](./chain_of_responsibility): Decouples sender and receiver of a request based on type of request. This pattern comes under behavioral patterns.
 
 4. [**Command Pattern**](./command): Encapsulates a request as an object, thereby letting you parameterize clients with queues, requests, or operations.
 
