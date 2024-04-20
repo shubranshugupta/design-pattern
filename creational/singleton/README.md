@@ -120,3 +120,62 @@ The Singleton Design Pattern can be broken in several ways. Some of the common w
     //solution
     private static final Singleton instance = new Singleton();
     ```
+
+## Problems in Multithreading
+
+The Singleton Design Pattern can face issues in a multithreaded environment if the singleton instance is not created in a thread-safe manner. There are several ways to create a thread-safe singleton instance:
+
+1. **Eager Initialization**: In this approach, the singleton instance is created when the class is loaded, ensuring that only one instance is created. This approach is thread-safe but may lead to unnecessary resource consumption if the singleton instance is not used.
+
+    ```java
+    public class Singleton {
+        private static final Singleton instance = new Singleton();
+    
+        private Singleton() {
+        }
+    
+        public static Singleton getInstance() {
+            return instance;
+        }
+    }
+    ```
+
+2. **Synchronized Method**: In this approach, the `getInstance()` method is synchronized to ensure that only one thread can access it at a time. This approach is thread-safe but may lead to performance issues due to the synchronization overhead.
+
+    ```java
+    public class Singleton {
+        private static Singleton instance;
+    
+        private Singleton() {
+        }
+    
+        public static synchronized Singleton getInstance() {
+            if (instance == null) {
+                instance = new Singleton();
+            }
+            return instance;
+        }
+    }
+    ```
+
+3. **Double-Checked Locking**: In this approach, the `getInstance()` method uses double-checked locking to create the singleton instance. This approach is thread-safe and avoids the synchronization overhead in most cases.
+
+    ```java
+    public class Singleton {
+        private static volatile Singleton instance;
+    
+        private Singleton() {
+        }
+    
+        public static Singleton getInstance() {
+            if (instance == null) {
+                synchronized (Singleton.class) {
+                    if (instance == null) {
+                        instance = new Singleton();
+                    }
+                }
+            }
+            return instance;
+        }
+    }
+    ```
