@@ -42,6 +42,7 @@ Here are some recommended resources to learn more about design patterns:
 
 - [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612) by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides
 - [Head First Design Patterns](https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124) by Eric Freeman, Elisabeth Robson, Bert Bates, and Kathy Sierra
+- [Refactoring Guru](https://refactoring.guru/design-patterns) - A website with detailed explanations and examples of design patterns
 
 ## License
 
